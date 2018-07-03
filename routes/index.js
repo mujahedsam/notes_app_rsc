@@ -66,7 +66,7 @@ router.post('/save', (req, res) => {
 		if (err) {
 			res.send("error in saving the record! to db");
 		} else {
-			res.send("Notes saved to DB");
+			res.send({message:"Notes saved to DB"});
 		}
 	})
 })
